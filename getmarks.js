@@ -3,13 +3,16 @@ const fs = require('fs');
 
 ( async () => { try {
 	const browser = await puppeteer.launch();
-
 	const jntupage = await browser.newPage();
+	
+	const pageurl = ""
 	const rolls = [ ]
-	// const rolls = [ 'JNTUA - Roll1', 'Roll2', 'Roll3' ] 
-	// Enter rolls with quotations separated by a comma(,)
+	
+	// Eg : const pageurl = "https://jntuaresults.ac.in/view-results-56736237.html"
+	// Eg : const rolls = [ '174G1A0560', '1744G10A560' ]
+	
 	for (var roll in rolls) { 
-	await jntupage.goto("https://jntuaresults.ac.in/view-results-56736237.html");
+	await jntupage.goto(pageurl);
 	await jntupage.type('#ht',rolls[roll]);
 	await jntupage.click('input.ci');
     	await jntupage.waitFor(1000);
