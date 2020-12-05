@@ -3,12 +3,14 @@ This project can automate your friends/classmates/college student's results with
 <h3> Requirements </h3>
 <ul>
   <li> npm + nodeJs </li>
+  <li> Puppeteer </li>
   <li> Google Sheets (Everyone will have this) </li>
 </ul>
 
 <h3> Setup </h3>
 <ol>
   <li> Install npm+nodeJs if u don't have @ https://www.npmjs.com/get-npm </li>
+  <li> Install Puppeteer  - <b> npm i puppeteer </b> </li>
   <li> Clone the repository - <b>git clone https://github.com/Sathyamshu2357/Automate_JNTUA_results.git </b> <l/i> 
 </ol>
 
