@@ -14,7 +14,7 @@ function getClear(s) {
 
 function makeItProper() {
   var ss  = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName('impropersheet');
+  var sheet = ss.getSheets()[0];
   var news = ss.insertSheet('propersheet')
   var data = sheet.getDataRange().getValues();
    

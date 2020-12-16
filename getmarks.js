@@ -15,7 +15,7 @@ const fs = require('fs');
 	await jntupage.goto(pageurl);
 	await jntupage.type('#ht',rolls[roll]);
 	await jntupage.click('input.ci');
-    	await jntupage.waitFor(1000);
+    	await jntupage.waitForTimeout(1000);
 	const innertext = await jntupage.evaluate( () => document.querySelector('#rs').innerText);
 	console.log(innertext.length);
 		if(innertext.length > 91) {

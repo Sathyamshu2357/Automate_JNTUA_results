@@ -4,7 +4,7 @@ This project can automate your friends/classmates/college student's results with
 <ul>
   <li> npm + nodeJs </li>
   <li> Puppeteer </li>
-  <li> Google Sheets (Everyone will have this) </li>
+  <li> Google Sheets </li>
 </ul>
 
 <h3> Setup </h3>
